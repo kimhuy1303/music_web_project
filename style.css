@@ -1,0 +1,13 @@
+a{
+    text-decoration: none;
+}
+#logo{
+    background-color: #FFC4C4;
+    text-align: center;
+}
+.row{
+    /* margin: 0 auto;
+    height:auto;
+    width: 500px; */
+    background-color:lightblue;
+}

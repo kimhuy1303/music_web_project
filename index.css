@@ -22,7 +22,9 @@
   height: 363px;
   padding-top: 100px;
 }
-
+body{
+  color:white;
+}
 .username {
   width: 360px;
   height: 105px;
@@ -35,6 +37,9 @@
   border: 3px solid #6b51bb;
   margin-top: 13px;
   background: rgba(172, 89, 161, 0.31);
+  padding-left: 20px;
+  font-size: 15px;
+  color: white;
 }
 .username label {
   font-size: 20px;
@@ -53,4 +58,11 @@
   border-radius: 55px;
   border: 3px solid #6b51bb;
   background: rgba(172, 89, 161, 0.31);
+  padding-left: 20px;
+  font-size: 15px;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color:blue;
 }
