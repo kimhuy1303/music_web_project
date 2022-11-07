@@ -22,8 +22,8 @@
   height: 363px;
   padding-top: 100px;
 }
-body{
-  color:white;
+body {
+  color: white;
 }
 .username {
   width: 360px;
@@ -62,7 +62,7 @@ body{
   font-size: 15px;
   color: white;
 }
-a{
+a {
   text-decoration: none;
-  color:blue;
+  color: blue;
 }
