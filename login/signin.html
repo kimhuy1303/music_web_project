@@ -26,7 +26,7 @@
       crossorigin="anonymous"
     ></script>
     <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="login.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -35,7 +35,7 @@
   <body>
     <div class="wrapper">
       <form action="signin_action.php" method="post">
-        <div class="logo">Archery</div>
+        <div class="logo">LOGO</div>
         <div id="form_login">
           <div class="username">
             <i class="fa-solid fa-user"></i>
@@ -47,19 +47,25 @@
               placeholder="Username"
             />
           </div>
+          <br>
           <div class="password">
             <label for="password">Password</label>
             <input
               type="password"
               name="password"
               id="password"
-              placeholder="password"
+              placeholder="Password"
             />
             <!-- icon here -->
           </div>
-          <input type="submit" value="Log in" name="btnGui" />
+          <br>
+          <br>
+          <input id="login" type="submit" value="Log in" name="btnGui" />
         </div>
-        <p>Don't have account ? <a href="register.html">Create now</a></p>
+        <br>
+        <br>
+        <br>
+        <center><p>Don't have account ? <a id="hoverthislink" href="register.html">Create now</a></p></center>
       </form>
     </div>
   </body>

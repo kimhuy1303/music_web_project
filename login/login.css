@@ -1,0 +1,109 @@
+body{
+    background: #090A27;
+}
+.wrapper {
+    display: flex;
+    margin: 80px auto;
+    border: 1px solid black;
+    justify-content: center;
+    /* align-items: center; */
+    width: 486px;
+    height: 573px;
+    position: relative;
+    background-color: rgb(60, 34, 77);
+    box-shadow: 0px 5px 34px 22px #340b2f;
+  }
+.logo {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 40px;
+}
+  
+#form_login {
+    height: 363px;
+    padding-top: 100px;
+}
+
+.username {
+    width: 356px;
+    height: 69px;
+    margin-bottom: 13px;
+}
+.username input {
+    width: 100%;
+    height: 67px;
+    border-radius: 55px;
+    border: 3px solid #6b51bb;
+    margin-top: 13px;
+    background: rgba(172, 89, 161, 0.31);
+    padding-left: 20px;
+    font-size: 15px;
+    color: white;
+}
+.username label {
+    font-size: 20px;
+    width: 92px;
+    height: 25px;
+    color: #fff;
+    text-shadow:
+        0 0 12px #f09,
+        0 0 30px #f09,
+        0 0 50px #f09;
+}
+.password {
+    width: 356px;
+    height: 69px;
+    margin-bottom: 13px;
+}
+.password input {
+    margin-top: 13px;
+    width: 100%;
+    height: 67px;
+    border-radius: 55px;
+    border: 3px solid #6b51bb;
+    background: rgba(172, 89, 161, 0.31);
+    padding-left: 20px;
+    font-size: 15px;
+    color: white;
+}
+.password label {
+    font-size: 20px;
+    width: 92px;
+    height: 25px;
+    height: 25px;
+    color: #fff;
+    text-shadow:
+        0 0 12px #f09,
+        0 0 30px #f09,
+        0 0 50px #f09;
+}
+#login{
+    width: 356px;
+    height: 69px;
+    border-radius: 55px;
+    background-color: rgba(239, 82, 107, 0.89);
+    color: #fff;
+    font-size: 30px;
+}
+#login:hover{
+    width: 356px;
+    height: 69px;
+    border-radius: 55px;
+    background: rgba(239, 82, 107, 0.53);
+    color: #090A27;
+    font-size: 30px;
+}
+#hoverthislink{
+    color: #fff;
+    text-decoration:underline;
+}
+#hoverthislink:hover{
+    color: #6b51bb;
+    text-decoration:underline;
+}
+body {
+    color: white;
+    font-family: 'Righteous';
+    font-style: normal; 
+}
