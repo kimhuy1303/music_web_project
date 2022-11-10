@@ -5,16 +5,16 @@
 
 body {
   background-color: #3d1a37;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #wrapper {
-  margin-top: 10px;
-  width: 1903px;
-  height: 940px;
+  width: 98%;
+  height: 98%;
   display: flex;
 }
 
@@ -22,12 +22,12 @@ body {
   background-color: #312653;
   height: 100%;
   margin: 0;
-  flex-basis: 242px;
+  flex-basis: 15%;
   border-radius: 15px 0 0 15px;
 }
 
 .main {
-  flex-basis: 1761px;
+  flex-basis: 85%;
   height: 100%;
   background-color: #090a27;
   border-radius: 0 15px 15px 0;
