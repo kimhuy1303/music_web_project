@@ -1,77 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
+  <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+  <title>Document</title>
+  <link rel="stylesheet" href="register.css" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  />
+  <script src="https://unpkg.com/phosphor-icons"></script>
 </head>
-<body>
-    <h1 id="logo">Archery</h1>
 
-    <form action="register_action.php">
-        <div class="row mb-3">
-            <label for="username" class="col-sm-2 col-form-label">Username</label>
-            <div class="col-sm-10">
-              <input type="text" name ="username" class="form-control" id="username"  placeholder="User name: ...">
-            </div>
+<body>
+  <div class="wrapper">
+    <form action="register_action.php" method="post">
+      <div class="logo" id="logo1">Register</div>
+      <div class="logo" id="logo2">Create a new account</div>
+      <div id="form_login">
+        <div class="username">
+          <i class="fa-solid fa-user"></i>
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+            required
+          />
         </div>
-        <div class="row mb-3">
-            <label for="email" class="col-sm-2 col-form-label">Email</label>
-            <div class="col-sm-10">
-              <input type="email" name="email" class="form-control" id="email"  placeholder="Ex: 123@gmail.com">
-            </div>
+        <div class="password">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <i class="ph-eye-slash" id="btnPassword"></i>
         </div>
-        <div class="row mb-3">
-          <label for="password1" class="col-sm-2 col-form-label">Password</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" name="password" id="password1" placeholder="Password...">
-          </div>
+        <div class="repeatPassword">
+          <label for="repeatPassword">Repeat&nbsp;Password</label>
+          <input
+            type="password"
+            name="repeatPassword"
+            id="repeatPassword"
+            placeholder="Password"
+            required
+          />
+          <i class="ph-eye-slash" id="btnPassword2"></i>
         </div>
-        <div class="row mb-3">
-          <label for="password2" class="col-sm-2 col-form-label">Repeat password</label>
-          <div class="col-sm-10">
-            <input type="password" class="form-control" id="password2" placeholder="Repeat your password...">
-          </div>
-        </div>
-        <fieldset class="row mb-3">
-          <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
-          <div class="col-sm-10">
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="Gender" id="male" value="male" checked>
-              <label class="form-check-label" for="male">
-                Male
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="radio" name="Gender" id="female" value="female">
-              <label class="form-check-label" for="female">
-                Female
-              </label>
-            </div>
-            <div class="form-check disabled">
-              <input class="form-check-input" type="radio" name="Gender" id="other" value="other">
-              <label class="form-check-label" for="other">
-                Other
-              </label>
-            </div>
-          </div>
-        </fieldset>
-        <div class="row mb-3">
-          <div class="col-sm-10 offset-sm-2">
-            <div class="form-check">
-                <label class="form-check-label" for="birthday">
-                    Birthdate
-                </label>
-                <input class="form-check-input" type="date" id="birthday" name="birthday">
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary" name="btnGui">Register</button>
-          <a href="signin.html">Already have an account?</a>
-        </div>
-      
-    </form>
-    </div>
+        <input id="login" type="submit" value="Sign up" name="btnGui" />
+        <center><p id="thislink">Aleardy have account? <a id="hoverthislink" href="signin.html">Login now</a></p></center>
+      </form>
+  </div>
+    
 </body>
+<script>
+    const ipnElement = document.querySelector('#password')
+    const btnElement = document.querySelector('#btnPassword')
+
+    btnElement.addEventListener('click', function() {
+
+      const currentType = ipnElement.getAttribute('type')
+
+      ipnElement.setAttribute('type', currentType === 'password' ? 'text' : 'password')
+      if (ipnElement.getAttribute('type') === 'password' ){
+        btnElement.className = 'ph-eye-slash'
+      }else{
+        btnElement.className = 'ph-eye'
+      }
+    })
+
+    const ipnElement2 = document.querySelector('#repeatPassword')
+    const btnElement2 = document.querySelector('#btnPassword2')
+
+    btnElement2.addEventListener('click', function() {
+
+      const currentType = ipnElement2.getAttribute('type')
+
+      ipnElement2.setAttribute('type', currentType === 'password' ? 'text' : 'password')
+      if (ipnElement2.getAttribute('type') === 'password' ){
+        btnElement2.className = 'ph-eye-slash'
+      }else{
+        btnElement2.className = 'ph-eye'
+      }
+    })
+  </script>
 </html>
