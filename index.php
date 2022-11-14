@@ -52,7 +52,8 @@
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-2">
-                    <input id="signin" type="button" value="Sign in">
+                    <a href="login/signin.php"><input id="signin" type="button" value="Sign in">
+                    </a>
                 </div>
                 <div class="col-md-1 col-sm-1">
                     <i class="ph-gear"></i>
