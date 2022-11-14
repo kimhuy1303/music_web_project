@@ -241,7 +241,7 @@ body{
     color: #FEFCFE;
     cursor: pointer;
 }
-#wrongPass{
+#err{
     position: absolute;
     bottom: 106px;
     left: 70px;
