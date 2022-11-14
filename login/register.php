@@ -1,14 +1,26 @@
 <?php
+    session_start();
+    $_SESSION['thongbao'] = "";
     require_once('../admincp/config/connect.php');
-    if(isset($_POST['btnGui']) && ($_POST['btnGui'])){
+    if(isset($_POST['btnGui'])){
       $username = validation($_POST['username']);
       $pass1 = validation($_POST['password']);
       $pass2 = validation($_POST['repeatPassword']);
+
+      
       if($pass1 == $pass2){
-        $pass = md5($pass1);
-        mysqli_query($conn,"insert into users(username, password) values('$username', '$pass')");
-        header("Location: signin.php");
-        
+        $rows = mysqli_query($conn,"select * from users where Username='$username'");
+        if(mysqli_num_rows($rows)==0){
+            $pass = md5($pass1);
+            mysqli_query($conn,"insert into users(Username, Password) values('$username', '$pass')");
+            $_SESSION['thongbao'] ="Đăng ký thành công!";
+            header("Location: signin.php");   
+
+        }
+        else{
+            $thongbao ="username này đã được sử dụng!";
+            
+        }
       }
       else{
         $thongbao = "Password lần 1 và lần 2 không chính xác với nhau";
@@ -41,17 +53,24 @@
 </head>
 
 <body>
+    <?php
+        if(isset($thongbao) && $thongbao != ""){
+            echo   '
+            <div class="alert alert-warning alert-dismissible fade show" role="alert" style="text-align:center; width:468px; margin:0 auto">
+            <strong>'.$thongbao.'</strong> 
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>';
+        }
+    ?>
     <div class="wrapper">
         <form method="post">
+            
+            
             <div class="logo" id="logo1">Register</div>
             <div class="logo" id="logo2">Create a new account</div>
-            <?php if(isset($thongbao) && $thongbao != ""){ ?>
-            <div class="alert alert-warning" role="alert">
-                <?php echo $thongbao; ?>
-            </div>
-            <?php
-              }
-            ?>
+            
+            
+
             <div id="form_login">
                 <div class="username">
                     <i class="fa-solid fa-user"></i>
@@ -61,7 +80,7 @@
                 </div>
                 <div class="password">
                     <label for="password">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Password" required />
+                    <input type="password" name="password" id="password" placeholder="Password" required onkeyup ="check()" />
                     <i class="ph-eye-slash" id="btnPassword"></i>
                 </div>
                 <div class="repeatPassword">
@@ -70,7 +89,7 @@
                         required; onkeyup="check()" />
                     <i class="ph-eye-slash" id="btnPassword2"></i>
                 </div>
-                <div style=" color: red" id="wrongPass"></div>
+                <div style=" color: red" id="err"></div>
                 <input id="login" type="submit" value="Sign up" name="btnGui" />
                 <center>
                     <p id="thislink">Aleardy have account? <a id="hoverthislink" href="signin.html">Login now</a></p>
@@ -82,7 +101,7 @@
 <script>
 const ipnElement = document.querySelector('#password')
 const btnElement = document.querySelector('#btnPassword')
-
+const username = document.querySelector('#username')
 btnElement.addEventListener('click', function() {
 
     const currentType = ipnElement.getAttribute('type')
@@ -113,12 +132,12 @@ btnElement2.addEventListener('click', function() {
 function check() {
     var pass1 = document.getElementById("password").value;
     var pass2 = document.getElementById("repeatPassword").value;
-    var errPass = document.getElementById("wrongPass");
+    var errPass = document.getElementById("err");
     if (pass1 != pass2) {
-        document.getElementById("wrongPass").innerHTML = "Wrong pass";
-    } else {
-        document.getElementById("wrongPass").innerHTML = "";
-
+        document.getElementById("err").innerHTML = "Wrong pass";
+    }
+    else {
+        document.getElementById("err").innerHTML = "";
     }
 }
 </script>
