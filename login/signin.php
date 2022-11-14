@@ -25,7 +25,10 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
-    <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+    <link
+      href="https://fonts.googleapis.com/css?family=Righteous"
+      rel="stylesheet"
+    />
     <title>Document</title>
     <link rel="stylesheet" href="login.css" />
     <link
@@ -37,9 +40,12 @@
   <body>
     <div class="wrapper">
       <form action="signin_action.php" method="post">
-        <div class="logo"><i  class="ph-target"></i><p>Archery</p></div>
-        <br>
-        <br>
+        <div class="logo">
+          <i class="ph-target"></i>
+          <p>Archery</p>
+        </div>
+        <br />
+        <br />
         <div id="form_login">
           <div class="username">
             <i class="fa-solid fa-user"></i>
@@ -52,7 +58,7 @@
               required
             />
           </div>
-          <br>
+          <br />
           <div class="password">
             <label for="password">Password</label>
             <input
@@ -65,31 +71,38 @@
             <a></a>
             <i class="ph-eye-slash" id="btnPassword"></i>
           </div>
-          <br>
-          <br>
+          <br />
+          <br />
           <input id="login" type="submit" value="Log in" name="btnGui" />
         </div>
-        <br>
-        <br>
-        <br>
-        <center><p id="thislink">Don't have account ? <a id="hoverthislink" href="register.html">Create now</a></p></center>
+        <br />
+        <br />
+        <br />
+        <center>
+          <p id="thislink">
+            Don't have account ?
+            <a id="hoverthislink" href="register.html">Create now</a>
+          </p>
+        </center>
       </form>
     </div>
   </body>
   <script>
-    const ipnElement = document.querySelector('#password')
-    const btnElement = document.querySelector('#btnPassword')
+    const ipnElement = document.querySelector("#password");
+    const btnElement = document.querySelector("#btnPassword");
 
-    btnElement.addEventListener('click', function() {
+    btnElement.addEventListener("click", function () {
+      const currentType = ipnElement.getAttribute("type");
 
-      const currentType = ipnElement.getAttribute('type')
-
-      ipnElement.setAttribute('type', currentType === 'password' ? 'text' : 'password')
-      if (ipnElement.getAttribute('type') === 'password' ){
-        btnElement.className = 'ph-eye-slash'
-      }else{
-        btnElement.className = 'ph-eye'
+      ipnElement.setAttribute(
+        "type",
+        currentType === "password" ? "text" : "password"
+      );
+      if (ipnElement.getAttribute("type") === "password") {
+        btnElement.className = "ph-eye-slash";
+      } else {
+        btnElement.className = "ph-eye";
       }
-    })
+    });
   </script>
 </html>

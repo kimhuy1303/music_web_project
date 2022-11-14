@@ -32,3 +32,23 @@ body {
   background-color: #090a27;
   border-radius: 0 15px 15px 0;
 }
+
+p {
+  width: 192px;
+  height: 33px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 32px;
+  /* identical to box height */
+
+  color: #fefcfe;
+  text-shadow: 1px 1px 0 #960082, -1px 1px 0 #960082, 1px -1px 0 #960082,
+    -1px -1px 0 #960082, 0px 1px 0 #960082, 0px -1px 0 #960082,
+    -1px 0px 0 #960082, 1px 0px 0 #960082, 2px 2px 0 #960082, -2px 2px 0 #960082,
+    2px -2px 0 #960082, -2px -2px 0 #960082, 0px 2px 0 #960082,
+    0px -2px 0 #960082, -2px 0px 0 #960082, 2px 0px 0 #960082, 1px 2px 0 #960082,
+    -1px 2px 0 #960082, 1px -2px 0 #960082, -1px -2px 0 #960082,
+    2px 1px 0 #960082, -2px 1px 0 #960082, 2px -1px 0 #960082,
+    -2px -1px 0 #960082;
+}
