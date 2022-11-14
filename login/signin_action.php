@@ -1,4 +1,5 @@
 <?php 
+
     if(isset($_POST["btnGui"])){
         if(!empty($_POST["username"])){
             $username = $_POST["username"];
