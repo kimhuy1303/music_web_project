@@ -38,8 +38,24 @@
                         <i class="ph-fire-simple"></i>
                         <span>Explore</span>
                     </li>
-                    <li><i class="ph-users"></i>Artists</li>
-                    <li><i class="ph-headphones"></i>Podcasts</li>
+                    <li><i class="ph-users"></i>
+                        <span> Artists</span>
+                </li>
+                    <li><i class="ph-headphones"></i>
+                <span>Podcasts</span></li>
+                </ul>
+                <h2 class="menu">MY MUSIC</h2>
+                <ul>
+                    <li>
+                    <i class="ph-star"></i></i>
+                        <span>Favorites</span>
+                    </li>
+                    <li><i class="ph-clock"></i></i>
+                    <span>Recent</span></li>
+                </ul>
+                <h2 class="menu">PLAYLISTS</h2>
+                <ul>
+                    <li><i class="ph-folder-plus"></i><span>Create Now</span></li>
                 </ul>
             </div>
             <div class="main row col-md-10 col-sm-10">
