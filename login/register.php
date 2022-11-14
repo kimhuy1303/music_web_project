@@ -1,18 +1,10 @@
 <?php
-    function validation($data){
-      $data = trim($data);
-      $data = stripslashes($data);
-      $data = htmlspecialchars($data);
-      return $data; 
-    }
-
     require_once('../admincp/config/connect.php');
     if(isset($_POST['btnGui']) && ($_POST['btnGui'])){
       $username = validation($_POST['username']);
       $pass1 = validation($_POST['password']);
       $pass2 = validation($_POST['repeatPassword']);
       if($pass1 == $pass2){
-
         $pass = md5($pass1);
         mysqli_query($conn,"insert into users(username, password) values('$username', '$pass')");
         header("Location: signin.php");
