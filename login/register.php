@@ -73,10 +73,17 @@
                 </div>
                 <div class="repeatPassword">
                     <label for="repeatPassword">Repeat&nbsp;Password</label>
-                    <input type="password" name="repeatPassword" id="repeatPassword" placeholder="Password" required />
+                    <input
+                        type="password";
+                        name="repeatPassword";
+                        id="repeatPassword";
+                        placeholder="Password";
+                        required;
+                        onkeyup="check()"
+                    />
                     <i class="ph-eye-slash" id="btnPassword2"></i>
                 </div>
-
+                <div style=" color: red" id ="wrongPass"></div>
                 <input id="login" type="submit" value="Sign up" name="btnGui" />
                 <center>
                     <p id="thislink">Aleardy have account? <a id="hoverthislink" href="signin.html">Login now</a></p>
@@ -115,6 +122,18 @@ btnElement2.addEventListener('click', function() {
         btnElement2.className = 'ph-eye'
     }
 })
+function check(){
+      var pass1 = document.getElementById("password").value;
+      var pass2 = document.getElementById("repeatPassword").value;
+      var errPass = document.getElementById("wrongPass");
+          if(pass1 != pass2){
+            document.getElementById("wrongPass").innerHTML ="Wrong pass";
+          }
+          else{
+            document.getElementById("wrongPass").innerHTML ="";
+
+          }
+        }
 </script>
 
 </html>
