@@ -40,12 +40,6 @@
                     </li>
                     <li><i class="ph-users"></i>Artists</li>
                     <li><i class="ph-headphones"></i>Podcasts</li>
-                    <li><i class="ph-users"></i>
-                        <span> Artists</span>
-                    </li>
-                    <li><i class="ph-headphones"></i>
-                        <span>Podcasts</span>
-                    </li>
                 </ul>
                 <h2 class="menu">MY MUSIC</h2>
                 <ul>
