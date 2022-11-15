@@ -28,20 +28,7 @@
 
     <body style="background-color: #3d1a37;">
         <div id="wrapper">
-            <div class="sidebar col-md-2 col-sm-2">
-                <h1 class="icon"><i class="ph-target"></i>
-                    <p class="Archery">Archery</p>
-                </h1>
-                <h2 class="menu">MENU</h2>
-                <ul>
-                    <li>
-                        <i class="ph-fire-simple"></i>
-                        <span>Explore</span>
-                    </li>
-                    <li><i class="ph-users"></i>Artists</li>
-                    <li><i class="ph-headphones"></i>Podcasts</li>
-                </ul>
-            </div>
+            <?php include('main/sidebar.php');?>
             <div class="main row col-md-10 col-sm-10">
                 <div class="form-field col-md-9 col-sm-9">
                     <div class="form-field">

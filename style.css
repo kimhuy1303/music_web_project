@@ -34,29 +34,24 @@ li {
   list-style-type: none;
 }
 .ph-target {
-  /* position: absolute; */
-  /* width: 192px; */
-  height: 36px;
-  /* left: 47px;
-  top: 13px; */
-  padding-left: 19px;
+  /* padding-left: 19px; */
+
+  font-size: 30px;
+  line-height: 25px;
+  color: #ffdeff;
+  transform: translateX(7px);
+}
+
+.icon {
+  width: 50%;
+  margin: 0 auto;
+  height: 50px;
+  position: relative;
   font-family: "Righteous";
   font-style: normal;
   font-weight: 400;
-  font-size: 26px;
-  line-height: 26px;
-  /* identical to box height */
-
-  text-align: center;
-
-  color: #ffdeff;
 }
-h2.menu {
-  font-family: "Righteous";
-  padding-left: 10px;
-  font-size: 15px;
-  color: #090a27;
-}
+
 .Archery {
   text-shadow: 1px 1px 0 #960082, -1px 1px 0 #960082, 1px -1px 0 #960082,
     -1px -1px 0 #960082, 0px 1px 0 #960082, 0px -1px 0 #960082,
@@ -67,8 +62,15 @@ h2.menu {
     2px 1px 0 #960082, -2px 1px 0 #960082, 2px -1px 0 #960082,
     -2px -1px 0 #960082;
   color: #ffdeff;
-  padding-right: 67px;
-  font-size: 24px;
+  /* padding-right: 67px; */
+  transform: translateX(-7px);
+  font-size: 26px;
+}
+h2.menu {
+  font-family: "Righteous";
+  padding-left: 10px;
+  font-size: 15px;
+  color: #090a27;
 }
 .main {
   flex-basis: 85%;
