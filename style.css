@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -26,33 +27,30 @@ body {
   border-radius: 15px 0 0 15px;
 }
 
+.icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  height: 50px;
+  position: relative;
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+}
+
 li {
   list-style-type: none;
 }
 
 .ph-target {
-  /* position: absolute; */
-  /* width: 192px; */
   height: 36px;
-  /* left: 47px;
-  top: 13px; */
-  padding-left: 19px;
-  font-family: "Righteous";
-  font-style: normal;
-  font-weight: 400;
+  padding-left: 20px;
   font-size: 26px;
   line-height: 26px;
-  /* identical to box height */
-
   text-align: center;
-
   color: #ffdeff;
-}
-h2.menu {
-  font-family: "Righteous";
-  padding-left: 10px;
-  font-size: 15px;
-  color: #090a27;
 }
 .Archery {
   text-shadow: 1px 1px 0 #960082, -1px 1px 0 #960082, 1px -1px 0 #960082,
@@ -67,6 +65,14 @@ h2.menu {
   padding-right: 67px;
   font-size: 24px;
 }
+
+h2.menu {
+  font-family: "Righteous";
+  padding-left: 10px;
+  font-size: 15px;
+  color: #090a27;
+}
+
 .main {
   flex-basis: 85%;
   height: 100%;
@@ -79,6 +85,11 @@ h2.menu {
   font-family: "Righteous";
   padding-left: 50px;
   width: 75%;
+}
+.form-field {
+  position: relative;
+  background-color: rgba(221, 93, 138, 0.01);
+  margin: 5px 0 0 5px;
 }
 .form-input:focus {
   border-color: #bbb;
@@ -118,10 +129,7 @@ h2.menu {
 
   color: #ffdeff;
 }
-.form-field {
-  position: relative;
-  background-color: rgba(221, 93, 138, 0.01);
-}
+
 .ph-gear {
   position: absolute;
   padding-top: 10px;
@@ -130,11 +138,6 @@ h2.menu {
   font-size: 20px;
 }
 
-.icon {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 li i {
   color: #6b51bb;
   font-size: 25px;
@@ -169,16 +172,6 @@ li {
   line-height: 25px;
   color: #ffdeff;
   transform: translateX(7px);
-}
-
-.icon {
-  width: 50%;
-  margin: 0 auto;
-  height: 50px;
-  position: relative;
-  font-family: "Righteous";
-  font-style: normal;
-  font-weight: 400;
 }
 
 .Archery {
@@ -265,16 +258,11 @@ h2.menu {
   color: white;
   font-size: 20px;
 }
-
-.icon {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 li i {
   color: #6b51bb;
   font-size: 22px;
   padding-top: 10px;
+  margin-right: 5px;
 }
 
 li {
@@ -287,10 +275,10 @@ li:hover {
   background-color: #1c152e;
 }
 .menu ul > li {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
 }
 .menu ul li span {
-  transform: translateY(-50%) !important;
+  font-size: 30px;
 }

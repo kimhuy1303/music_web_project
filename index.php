@@ -28,36 +28,9 @@
 
     <body style="background-color: #3d1a37;">
         <div id="wrapper">
-            <div class="sidebar col-md-2 col-sm-2">
-                <h1 class="icon"><i class="ph-target"></i>
-                    <p class="Archery">Archery</p>
-                </h1>
-                <h2 class="menu">MENU</h2>
-                <ul>
-                    <li>
-                        <i class="ph-fire-simple"></i>
-                        <span>Explore</span>
-                    </li>
-                    <li><i class="ph-users"></i>Artists</li>
-                    <li><i class="ph-headphones"></i>Podcasts</li>
-                </ul>
-                <h2 class="menu">MY MUSIC</h2>
-                <ul>
-                    <li>
-                        <i class="ph-star"></i></i>
-                        <span>Favorites</span>
-                    </li>
-                    <li><i class="ph-clock"></i></i>
-                        <span>Recent</span>
-                    </li>
-                </ul>
-                <h2 class="menu">PLAYLISTS</h2>
-                <ul>
-                    <li><i class="ph-folder-plus"></i><span>Create Now</span></li>
-                </ul>
-            </div>
+            <?php include('view/sidebar.php') ?>
             <div class="main row col-md-10 col-sm-10">
-                <div class="form-field col-md-9 col-sm-9">
+                <div class=" col-md-10 col-sm-10">
                     <div class="form-field">
                         <input type="text" class="form-input" placeholder="  Search for music, artists ect. ">
                         <label for="Search for music, artists ect." class="form-label"><i class='ph-magnifying-glass'
@@ -68,8 +41,6 @@
                 <div class="col-md-2 col-sm-2">
                     <a href="login/signin.php"><input id="signin" type="button" value="Sign in">
                     </a>
-                </div>
-                <div class="col-md-1 col-sm-1">
                     <i class="ph-gear"></i>
                 </div>
             </div>
