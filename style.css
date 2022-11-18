@@ -3,23 +3,19 @@
   margin: 0;
 }
 
-
-body{
+body {
   background-color: #3d1a37;
   width: 100vw;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-
-
 }
 
 #wrapper {
   width: 98%;
   height: 98%;
   display: flex;
-
 }
 
 .sidebar {
@@ -29,17 +25,19 @@ body{
   flex-basis: 15%;
   border-radius: 15px 0 0 15px;
 }
-li{
+
+li {
   list-style-type: none;
 }
-.ph-target{
+
+.ph-target {
   /* position: absolute; */
-    /* width: 192px; */
-    height: 36px;
+  /* width: 192px; */
+  height: 36px;
   /* left: 47px;
   top: 13px; */
   padding-left: 19px;
-  font-family: 'Righteous';
+  font-family: "Righteous";
   font-style: normal;
   font-weight: 400;
   font-size: 26px;
@@ -48,44 +46,26 @@ li{
 
   text-align: center;
 
-  color: #FFDEFF;;
+  color: #ffdeff;
 }
-h2.menu{
-  font-family: 'Righteous';
+h2.menu {
+  font-family: "Righteous";
   padding-left: 10px;
   font-size: 15px;
-  color: #090A27;
+  color: #090a27;
 }
-.Archery{
-
-  text-shadow: 1px 1px 0 #960082,
-    -1px 1px 0 #960082,
-    1px -1px 0 #960082,
-    -1px -1px 0 #960082,
-    0px 1px 0 #960082,
-    0px -1px 0 #960082,
-    -1px 0px 0 #960082,
-    1px 0px 0 #960082,
-    2px 2px 0 #960082,
-    -2px 2px 0 #960082,
-    2px -2px 0 #960082,
-    -2px -2px 0 #960082,
-    0px 2px 0 #960082,
-    0px -2px 0 #960082,
-    -2px 0px 0 #960082,
-    2px 0px 0 #960082,
-    1px 2px 0 #960082,
-    -1px 2px 0 #960082,
-    1px -2px 0 #960082,
-    -1px -2px 0 #960082,
-    2px 1px 0 #960082,
-    -2px 1px 0 #960082,
-    2px -1px 0 #960082,
+.Archery {
+  text-shadow: 1px 1px 0 #960082, -1px 1px 0 #960082, 1px -1px 0 #960082,
+    -1px -1px 0 #960082, 0px 1px 0 #960082, 0px -1px 0 #960082,
+    -1px 0px 0 #960082, 1px 0px 0 #960082, 2px 2px 0 #960082, -2px 2px 0 #960082,
+    2px -2px 0 #960082, -2px -2px 0 #960082, 0px 2px 0 #960082,
+    0px -2px 0 #960082, -2px 0px 0 #960082, 2px 0px 0 #960082, 1px 2px 0 #960082,
+    -1px 2px 0 #960082, 1px -2px 0 #960082, -1px -2px 0 #960082,
+    2px 1px 0 #960082, -2px 1px 0 #960082, 2px -1px 0 #960082,
     -2px -1px 0 #960082;
-    color: #FFDEFF;
-    padding-right: 67px;
-    font-size: 24px;
-
+  color: #ffdeff;
+  padding-right: 67px;
+  font-size: 24px;
 }
 .main {
   flex-basis: 85%;
@@ -93,75 +73,56 @@ h2.menu{
   background-color: #090a27;
   border-radius: 0 15px 15px 0;
 }
-.form-input{
+.form-input {
   border-radius: 50px;
-  padding:10px; 
-  font-family: 'Righteous';
+  padding: 10px;
+  font-family: "Righteous";
   padding-left: 50px;
-  width:75%;
- 
+  width: 75%;
 }
-.form-input:focus{
+.form-input:focus {
   border-color: #bbb;
 }
 
-.form-label{
+.form-label {
   text-align: center;
   position: absolute;
-  top:50%;
-  transform:  translateY(-40%);
+  top: 50%;
+  transform: translateY(-40%);
   left: 6px;
   color: gray;
-  font-family: 'Righteous';
-
+  font-family: "Righteous";
 }
 
-#signin{
-   text-shadow: 1px 1px 0 #960082,
-    -1px 1px 0 #960082,
-    1px -1px 0 #960082,
-    -1px -1px 0 #960082,
-    0px 1px 0 #960082,
-    0px -1px 0 #960082,
-    -1px 0px 0 #960082,
-    1px 0px 0 #960082,
-    2px 2px 0 #960082,
-    -2px 2px 0 #960082,
-    2px -2px 0 #960082,
-    -2px -2px 0 #960082,
-    0px 2px 0 #960082,
-    0px -2px 0 #960082,
-    -2px 0px 0 #960082,
-    2px 0px 0 #960082,
-    1px 2px 0 #960082,
-    -1px 2px 0 #960082,
-    1px -2px 0 #960082,
-    -1px -2px 0 #960082,
-    2px 1px 0 #960082,
-    -2px 1px 0 #960082,
-    2px -1px 0 #960082,
+#signin {
+  text-shadow: 1px 1px 0 #960082, -1px 1px 0 #960082, 1px -1px 0 #960082,
+    -1px -1px 0 #960082, 0px 1px 0 #960082, 0px -1px 0 #960082,
+    -1px 0px 0 #960082, 1px 0px 0 #960082, 2px 2px 0 #960082, -2px 2px 0 #960082,
+    2px -2px 0 #960082, -2px -2px 0 #960082, 0px 2px 0 #960082,
+    0px -2px 0 #960082, -2px 0px 0 #960082, 2px 0px 0 #960082, 1px 2px 0 #960082,
+    -1px 2px 0 #960082, 1px -2px 0 #960082, -1px -2px 0 #960082,
+    2px 1px 0 #960082, -2px 1px 0 #960082, 2px -1px 0 #960082,
     -2px -1px 0 #960082;
-    width: 120px;
-    height: 35px;
-    left: 47px;
-    background-color:#4f3e7f ;
-    border: 1px solid #4f3e7f;
-    border-radius: 30px;
-    font-family: 'Righteous';
-    font-style: normal;
-    font-size: 26px;
-    line-height: 26px;
-    margin-top: 5px;
-    text-align: center;
-  
-    color: #FFDEFF;
-  
+  width: 120px;
+  height: 35px;
+  left: 47px;
+  background-color: #4f3e7f;
+  border: 1px solid #4f3e7f;
+  border-radius: 30px;
+  font-family: "Righteous";
+  font-style: normal;
+  font-size: 26px;
+  line-height: 26px;
+  margin-top: 5px;
+  text-align: center;
+
+  color: #ffdeff;
 }
-.form-field{
+.form-field {
   position: relative;
   background-color: rgba(221, 93, 138, 0.01);
 }
-.ph-gear{
+.ph-gear {
   position: absolute;
   padding-top: 10px;
   right: 45px;
@@ -169,34 +130,32 @@ h2.menu{
   font-size: 20px;
 }
 
-.icon{
+.icon {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-li i{
-  color: #6B51BB;
+li i {
+  color: #6b51bb;
   font-size: 25px;
   padding-top: 10px;
 }
 
-li{
-  color: #B17FB6;
-  font-family: 'Righteous';
+li {
+  color: #b17fb6;
+  font-family: "Righteous";
   font-size: 25px;
   padding-right: 20px;
-
-  
 }
-.menu ul>li{
+.menu ul > li {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
 }
-.menu ul>li span{
-  transform: translateY(-50%)!important;
+.menu ul > li span {
+  transform: translateY(-50%) !important;
 }
-p{
+p {
   width: 192px;
   height: 33px;
 }
@@ -232,8 +191,10 @@ li {
     2px 1px 0 #960082, -2px 1px 0 #960082, 2px -1px 0 #960082,
     -2px -1px 0 #960082;
   color: #ffdeff;
-  /* padding-right: 67px; */
-  transform: translateX(-7px);
+  padding-right: 60px;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  transform: translateX(15px);
   font-size: 26px;
 }
 h2.menu {
@@ -310,27 +271,26 @@ h2.menu {
   justify-content: space-around;
   align-items: center;
 }
-li i{
+li i {
   color: #6b51bb;
   font-size: 22px;
   padding-top: 10px;
 }
 
-li{
+li {
   color: #b17fb6;
   font-family: "Righteous";
   font-size: 25px;
   padding: 0;
 }
-li:hover{
+li:hover {
   background-color: #1c152e;
-
 }
 .menu ul > li {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.menu ul  li span {
+.menu ul li span {
   transform: translateY(-50%) !important;
 }
