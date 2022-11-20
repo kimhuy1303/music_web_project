@@ -1,53 +1,52 @@
-.sidebar {
+
+.menu_bar {
+  height: 100vh;
   background-color: #312653;
-  height: 100%;
-  margin: 0;
-  flex-basis: 15%;
-  border-radius: 15px 0 0 15px;
+  font-family: 'Righteous', cursive;
 }
-
-.icon {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 50%;
-  margin: 0 auto;
-  height: 50px;
-  position: relative;
-  font-family: "Righteous";
-  font-style: normal;
-  font-weight: 400;
-}
-
-li {
-  list-style-type: none;
+a {
+  text-decoration: none;
 }
 
 .ph-target {
-  height: 36px;
-  padding-left: 20px;
-  font-size: 26px;
-  line-height: 26px;
-  text-align: center;
-  color: #ffdeff;
-}
-.Archery {
-  text-shadow: 1px 1px 0 #960082, -1px 1px 0 #960082, 1px -1px 0 #960082,
-    -1px -1px 0 #960082, 0px 1px 0 #960082, 0px -1px 0 #960082,
-    -1px 0px 0 #960082, 1px 0px 0 #960082, 2px 2px 0 #960082, -2px 2px 0 #960082,
-    2px -2px 0 #960082, -2px -2px 0 #960082, 0px 2px 0 #960082,
-    0px -2px 0 #960082, -2px 0px 0 #960082, 2px 0px 0 #960082, 1px 2px 0 #960082,
-    -1px 2px 0 #960082, 1px -2px 0 #960082, -1px -2px 0 #960082,
-    2px 1px 0 #960082, -2px 1px 0 #960082, 2px -1px 0 #960082,
-    -2px -1px 0 #960082;
-  color: #ffdeff;
-  padding-right: 67px;
-  font-size: 24px;
+  font-size: 33px;
+  color: #FFDEFF;
+  transform: translate(5px,7px);
 }
 
-h2.menu {
-  font-family: "Righteous";
-  padding-left: 10px;
-  font-size: 15px;
-  color: #090a27;
+.archery {
+  font-size: 26px;
+  color: #FEFCFE;  
+  text-shadow: 2px 0 0 #8E4885, -2px 0 0 #8E4885, 0 2px 0 #8E4885, 0 -2px 0 #8E4885, 1px 1px #8E4885, -1px -1px 0 #8E4885, 1px -1px 0 #8E4885, -1px 1px 0 #8E4885;  
+}
+
+.logo{
+  padding: 15px 35px 0 40px;
+}
+
+.color_text {
+  color: #090A27;
+  font-size: 18px;
+}
+
+.ph-fire-simple, .ph-users, .ph-headphones, .ph-star, .ph-clock, .ph-folder-plus {
+  color: #6B51BB;
+  font-size: 30px;
+  transform: translateY(5px);
+  padding: 0 5px 0 0;
+}
+
+.menu_bar {
+  color: #B17FB6;
+  font-size: 25px;
+}
+
+.menu, .playlists, .my_music {
+  padding: 35px 0 0 35px;
+}
+li:hover{
+  background-color: #241A43;
+}
+.name_playlists{
+  translate: translateX(-15px);
 }

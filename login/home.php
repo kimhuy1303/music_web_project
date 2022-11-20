@@ -26,29 +26,29 @@
       crossorigin="anonymous"
     ></script>
     <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
-    <title>Document</title>
+    <title>Archery Music | Nghe nhạc Mới, tải nhạc Hot chất lượng cao</title>
     <link rel="stylesheet" href="home.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
     <script src="https://unpkg.com/phosphor-icons"></script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <form action="signin.html" method="post">
-        <div class="logo"><i  class="ph-target"></i><p>Archery</p></div>
-        <br>
-        <br>
-        <div id="form_login">
-            <br>
-            <br>
-            <br>
-            <center><p class="text">Millions of songs.</p></center>
-            <center><p class="text">Free on Archery</p></center>
-            <br>
-            <input id="login" type="submit" value="Log in" name="btnGui" />
-        </div>
-      </form>
-    </div>
-  </body>
+</head>
+<body>
+  <div class="wrapper">
+    <form action="signin.html" method="post">
+      <div class="logo"><i  class="ph-target"></i><p>Archery</p></div>
+      <br>
+      <br>
+      <div id="form_login">
+          <br>
+          <br>
+          <br>
+          <center><p class="text">Millions of songs.</p></center>
+          <center><p class="text">Free on Archery</p></center>
+          <br>
+          <input id="login" type="submit" value="Log in" name="btnGui" />
+      </div>
+    </form>
+  </div>
+</body>

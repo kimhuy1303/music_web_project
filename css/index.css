@@ -1,2 +1,12 @@
-/* File css mẫu */
-/* Có gì mọi người tự thêm file ròi link file vào file index.php */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #3d1a37; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}

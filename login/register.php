@@ -46,7 +46,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
-    <title>ArcheryMusic</title>
+    <title>Archery Music | Nghe nhạc mới, Tải nhạc Hot chất lượng cao</title>
     <link rel="stylesheet" href="register.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <script src="https://unpkg.com/phosphor-icons"></script>
