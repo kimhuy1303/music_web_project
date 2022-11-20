@@ -51,11 +51,6 @@ li {
 li:hover {
   background-color: #1c152e;
 }
-.menu ul > li {
-  /* display: flex;
-    justify-content: space-between;
-    align-items: center; */
-}
 .menu ul li span {
   font-size: 30px;
 }
