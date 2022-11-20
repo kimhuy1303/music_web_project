@@ -1,0 +1,61 @@
+.main {
+  flex-basis: 85%;
+  height: 100%;
+  background-color: #090a27;
+  border-radius: 0 15px 15px 0;
+}
+.form-input {
+  border-radius: 50px;
+  padding: 10px;
+  font-family: "Righteous";
+  padding-left: 50px;
+  width: 75%;
+}
+.form-input:focus {
+  border-color: #bbb;
+}
+
+.form-label {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-40%);
+  left: 6px;
+  color: gray;
+  font-family: "Righteous";
+}
+.form-field {
+  position: relative;
+  background-color: rgba(221, 93, 138, 0.01);
+}
+.ph-gear {
+  position: absolute;
+  padding-top: 10px;
+  right: 45px;
+  color: white;
+  font-size: 20px;
+}
+li i {
+  color: #6b51bb;
+  font-size: 22px;
+  padding-top: 10px;
+  margin-right: 5px;
+}
+
+li {
+  color: #b17fb6;
+  font-family: "Righteous";
+  font-size: 25px;
+  padding: 0;
+}
+li:hover {
+  background-color: #1c152e;
+}
+.menu ul > li {
+  /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+.menu ul li span {
+  font-size: 30px;
+}

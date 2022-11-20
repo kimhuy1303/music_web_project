@@ -1,0 +1,53 @@
+.sidebar {
+  background-color: #312653;
+  height: 100%;
+  margin: 0;
+  flex-basis: 15%;
+  border-radius: 15px 0 0 15px;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  height: 50px;
+  position: relative;
+  font-family: "Righteous";
+  font-style: normal;
+  font-weight: 400;
+}
+
+li {
+  list-style-type: none;
+}
+
+.ph-target {
+  height: 36px;
+  padding-left: 20px;
+  font-size: 26px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffdeff;
+}
+.Archery {
+  text-shadow: 1px 1px 0 #960082, -1px 1px 0 #960082, 1px -1px 0 #960082,
+    -1px -1px 0 #960082, 0px 1px 0 #960082, 0px -1px 0 #960082,
+    -1px 0px 0 #960082, 1px 0px 0 #960082, 2px 2px 0 #960082, -2px 2px 0 #960082,
+    2px -2px 0 #960082, -2px -2px 0 #960082, 0px 2px 0 #960082,
+    0px -2px 0 #960082, -2px 0px 0 #960082, 2px 0px 0 #960082, 1px 2px 0 #960082,
+    -1px 2px 0 #960082, 1px -2px 0 #960082, -1px -2px 0 #960082,
+    2px 1px 0 #960082, -2px 1px 0 #960082, 2px -1px 0 #960082,
+    -2px -1px 0 #960082;
+  color: #ffdeff;
+  padding-right: 67px;
+  font-size: 24px;
+}
+
+h2.menu {
+  font-family: "Righteous";
+  padding-left: 10px;
+  font-size: 15px;
+  color: #090a27;
+}
