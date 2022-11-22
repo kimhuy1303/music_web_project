@@ -27,7 +27,7 @@
     ></script>
     <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
     <title>Archery Music | Nghe nhạc Mới, tải nhạc Hot chất lượng cao</title>
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="../css/home.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
