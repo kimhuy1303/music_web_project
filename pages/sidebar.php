@@ -1,3 +1,4 @@
+<!-- Qzy đang làm cấm đụng -->
 <div class="menu_bar col-lg-2 col-1">
     <nav class="nav">
         <!-- LOGO -->

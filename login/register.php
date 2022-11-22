@@ -92,7 +92,7 @@
                 <div style=" color: red" id="err"></div>
                 <input id="login" type="submit" value="Sign up" name="btnGui" />
                 <center>
-                    <p id="thislink">Aleardy have account? <a id="hoverthislink" href="signin.html">Login now</a></p>
+                    <p id="thislink">Aleardy have account? <a id="hoverthislink" href="signin.php">Login now</a></p>
                 </center>
         </form>
     </div>
