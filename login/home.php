@@ -36,7 +36,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <form action="signin.html" method="post">
+    <form action="signin.php" method="post">
       <div class="logo"><i  class="ph-target"></i><p>Archery</p></div>
       <br>
       <br>

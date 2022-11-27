@@ -45,14 +45,6 @@
 </head>
 
 <body>
-    <?php 
-    if(isset($_SESSION['thongbao'])){
-        echo '<div class="alert alert-success alert-dismissible fade show" role="alert" style="text-align:center; width:468px; margin:0 auto">
-        <strong>'.$_SESSION['thongbao'].'</strong> 
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>';
-    }
-    ?>
     <div class="wrapper">
         <form method="post">
             <div class="logo">

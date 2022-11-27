@@ -1,6 +1,5 @@
 <?php
     session_start();
-    $_SESSION['thongbao'] = "";
     require_once('../admincp/config/connect.php');
     if(isset($_POST['btnGui'])){
       $username = validation($_POST['username']);
@@ -15,7 +14,6 @@
             mysqli_query($conn,"insert into users(Username, Password) values('$username', '$pass')");
             $_SESSION['thongbao'] ="Đăng ký thành công!";
             header("Location: signin.php");   
-
         }
         else{
             $thongbao ="username này đã được sử dụng!";
@@ -53,15 +51,7 @@
 </head>
 
 <body>
-    <?php
-        if(isset($thongbao) && $thongbao != ""){
-            echo   '
-            <div class="alert alert-warning alert-dismissible fade show" role="alert" style="text-align:center; width:468px; margin:0 auto">
-            <strong>'.$thongbao.'</strong> 
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>';
-        }
-    ?>
+    
     <div class="wrapper">
         <form method="post">
             
