@@ -49,5 +49,5 @@ li:hover{
 .name_playlists{
   translate: translateX(-15px); 
   list-style-type: none;
-  display: none;
+  /* display: none; */
 }
