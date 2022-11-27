@@ -16,7 +16,6 @@
     <!-- include library -->
 </head>
 
-
 <body>
     <?php include('pages/sidebar.php')?>
     <?php include('pages/main.php')?>
