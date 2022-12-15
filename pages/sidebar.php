@@ -1,14 +1,14 @@
 <!-- Qzy đang làm cấm đụng -->
-<div class="menu_bar col-lg-2 col-1">
+<div class="menu_bar col-lg-2 col-2">
     <nav class="nav">
         <!-- LOGO -->
         <div class="logo">
-            <i class="ph-target"></i>
-            <span class="archery">Archery</span>
+            <i class="ph-target fs-2"></i>
+            <span class="archery fs-3">Archery</span>
         </div>
         <ul class="navbar-nav">
             <!-- MENU -->
-            <div class="menu col-lg-">
+            <div class="menu">
                 <span class="color_text">MENU</span>
                 <li><i class="ph-fire-simple"></i>Explore</li>
                 <li><i class="ph-users"></i>Artists</li>
@@ -23,7 +23,7 @@
             <!-- PLAYLISTS -->
             <div class="playlists">
                 <span class="color_text">PLAYLISTS</span>
-                <li><i class="ph-folder-plus"></i>Create Now
+                <li class="create_now"><i class="ph-folder-plus"></i>Create Now
             </li>
             <!-- Khi nào tạo playlist thì show -->
             <ul class="name_playlists">

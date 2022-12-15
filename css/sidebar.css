@@ -8,13 +8,13 @@ a {
 }
 
 .ph-target {
-  font-size: 35px;
+  /* font-size: 35px; */
   color: #FFDEFF;
   transform: translate(5px,7px);
 }
 
 .archery {
-  font-size: 26px;
+  /* font-size: 26px; */
   color: #FEFCFE;  
   text-shadow: 2px 0 0 #8E4885, -2px 0 0 #8E4885, 0 2px 0 #8E4885, 0 -2px 0 #8E4885, 1px 1px #8E4885, -1px -1px 0 #8E4885, 1px -1px 0 #8E4885, -1px 1px 0 #8E4885;  
 }
@@ -49,5 +49,5 @@ li:hover{
 .name_playlists{
   translate: translateX(-15px); 
   list-style-type: none;
-  display: none;
+  /* display: none; */
 }
